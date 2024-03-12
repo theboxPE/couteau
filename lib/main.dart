@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'navbar.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Material App',
       home: Scaffold(
+        drawer: const Navbar(),
         appBar: AppBar(
           title: const Text('Material App Bar'),
         ),
@@ -24,9 +26,6 @@ class MyApp extends StatelessWidget {
                 height: 150.0,
                 width: 250.0,
                 child: Image.asset('assets/caja.jpg'),
-              ),
-              const SizedBox(
-
               ),
             ],
           ),
