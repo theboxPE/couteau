@@ -24,11 +24,24 @@ class MyApp extends StatelessWidget {
                 height: 150.0,
                 width: 250.0,
                 child: Image.asset('assets/caja.jpg'),
-              )
+              ),
+              SizedBox(
+
+              ),
             ],
           ),
         ),
+        /*floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'toolbox',
+        child: const Icon(Icons.tools),*/
+      ), 
       ),
     );
   }
 }
+
+
+
+
+
