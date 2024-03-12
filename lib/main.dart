@@ -8,13 +8,25 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Material App',
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Material App Bar'),
         ),
-        body: const Center(
-          child: Text('Hello World'),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget> [
+              const Text('Hello World'),
+              const SizedBox(height: 20), 
+              SizedBox(
+                height: 150.0,
+                width: 250.0,
+                child: Image.asset('assets/caja.jpg'),
+              )
+            ],
+          ),
         ),
       ),
     );
