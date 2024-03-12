@@ -48,7 +48,7 @@ class NoticiasWordPressState extends State<NoticiasWordPress> {
       body: Column(
         children: [
           // Mostrar el logo del sitio web
-          Image.asset('assets/sonic music.jpg'),
+          Image.asset('assets/sonic.jpg'),
           const SizedBox(height: 20),
           // Mostrar las noticias
           Expanded(
