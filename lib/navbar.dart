@@ -70,7 +70,7 @@ class Navbar extends StatelessWidget {
               title: const Text('WordPress'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => const APi(),
+                  builder: (context) => const NoticiasWordPress(),
                 ));
               },
             ),
