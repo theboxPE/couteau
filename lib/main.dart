@@ -25,18 +25,13 @@ class MyApp extends StatelessWidget {
                 width: 250.0,
                 child: Image.asset('assets/caja.jpg'),
               ),
-              SizedBox(
+              const SizedBox(
 
               ),
             ],
           ),
         ),
-        /*floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'toolbox',
-        child: const Icon(Icons.tools),*/
-      ), 
-      ),
+      )
     );
   }
 }

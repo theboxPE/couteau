@@ -31,7 +31,7 @@ class Navbar extends StatelessWidget {
             const SizedBox(height: 30.0),
             ListTile(
               leading: const Icon(Icons.people),
-              title: const Text('Personajes'),
+              title: const Text('Generos'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
                   builder: (context) => const Genero(),
@@ -40,16 +40,7 @@ class Navbar extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(Icons.camera),
-              title: const Text('Momentos'),
-              onTap: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => const Clima(),
-                ));
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.info),
-              title: const Text('Acerca De'),
+              title: const Text('Edad'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
                   builder: (context) => const Nombre(),
@@ -57,8 +48,8 @@ class Navbar extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: const Icon(Icons.video_library),
-              title: const Text('Mi Vida'),
+              leading: const Icon(Icons.info),
+              title: const Text('Paises'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
                   builder: (context) => const Uni(),
@@ -66,8 +57,8 @@ class Navbar extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: const Icon(Icons.business_center),
-              title: const Text('Contacto'),
+              leading: const Icon(Icons.video_library),
+              title: const Text('Clima'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
                   builder: (context) => const Clima(),
@@ -76,7 +67,7 @@ class Navbar extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(Icons.business_center),
-              title: const Text('Contacto'),
+              title: const Text('WordPress'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
                   builder: (context) => const APi(),
@@ -85,10 +76,10 @@ class Navbar extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(Icons.business_center),
-              title: const Text('Contacto'),
+              title: const Text('Acerca de'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => const Acerca(),
+                  builder: (context) => const Contacto(),
                 ));
               },
             ),
