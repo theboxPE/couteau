@@ -10,21 +10,21 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Material App',
+      title: 'Couteau',
       home: Scaffold(
         drawer: const Navbar(),
         appBar: AppBar(
-          title: const Text('Material App Bar'),
+          title: const Text('Home page'),
         ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget> [
-              const Text('Hello World'),
+              const Text(''),
               const SizedBox(height: 20), 
               SizedBox(
-                height: 150.0,
-                width: 250.0,
+                height: 250.0,
+                width: 350.0,
                 child: Image.asset('assets/caja.jpg'),
               ),
             ],

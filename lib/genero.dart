@@ -37,12 +37,16 @@ class GeneroState extends State<Genero> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Material App Bar'),
+        title: const Text('Determinar genero'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const Text(
+            'Ingrese un nombre para determinar el género:',
+            style: TextStyle(fontSize: 16),
+            ),
             TextField(
               onChanged: (value) {
                 nombre = value;

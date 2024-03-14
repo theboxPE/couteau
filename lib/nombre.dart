@@ -47,12 +47,16 @@ class NombreState extends State<Nombre> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Material App Bar'),
+        title: const Text('Determinar edad'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const Text(
+            'Ingrese un nombre para determinar la edad:',
+            style: TextStyle(fontSize: 16),
+            ),
             TextField(
               onChanged: (value) {
                 nombre = value;
