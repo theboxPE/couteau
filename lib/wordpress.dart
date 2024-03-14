@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:url_launcher/url_launcher.dart';
 import 'dart:convert';
 
 
@@ -60,11 +61,7 @@ class NoticiasWordPressState extends State<NoticiasWordPress> {
                   child: ListTile(
                     title: Text(noticia['titulo']),
                     subtitle: Text(noticia['resumen']),
-                    onTap: () {
-                      // Abrir el enlace de la noticia en el navegador web
-                      // (requiere la dependencia 'url_launcher')
-                      // launch(noticia['enlace']);
-                    },
+                    onTap: () => _launchURL(noticia['enlace']),
                   ),
                 );
               },
@@ -74,5 +71,14 @@ class NoticiasWordPressState extends State<NoticiasWordPress> {
       ),
     );
   }
+
+ Future<void> _launchURL(String url) async {
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
 }
 
