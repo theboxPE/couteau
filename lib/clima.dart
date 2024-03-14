@@ -11,7 +11,7 @@ class Clima extends StatefulWidget {
 }
 
 class ClimaPageState extends State<Clima> {
-  final WeatherFactory _wf = WeatherFactory('fbz9xn0ad7sur9qz0hta5hz81vsd2s6qezgee002');
+  final WeatherFactory _wf = WeatherFactory('');
   Weather? _weather;
 
   @override
